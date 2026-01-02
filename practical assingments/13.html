@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort Three Numbers</title>
+</head>
+<body>
+  <button onclick="sortNumbers()">Sort Numbers</button>
+
+  <script>
+    function sortNumbers() {
+      let a = 7, b = 3, c = 5;
+      let sorted;
+      if(a >= b && a >= c){
+        if(b >= c) sorted = [a, b, c];
+        else sorted = [a, c, b];
+      } else if(b >= a && b >= c){
+        if(a >= c) sorted = [b, a, c];
+        else sorted = [b, c, a];
+      } else {
+        if(a >= b) sorted = [c, a, b];
+        else sorted = [c, b, a];
+      }
+      alert("Sorted Numbers: " + sorted.join(", "));
+    }
+  </script>
+</body>
+</html>

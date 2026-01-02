@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Game Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-box {
+      background: #fff;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #1d2671;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c33764;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Online Game Registration</h2>
+
+    <form>
+      <label>Player Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Age</label>
+      <input type="number" required>
+
+      <label>Game Type</label>
+      <select required>
+        <option>Select Game</option>
+        <option>BGMI</option>
+        <option>Free Fire</option>
+        <option>Valorant</option>
+        <option>Call of Duty</option>
+      </select>
+
+      <label>Gaming ID</label>
+      <input type="text" required>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </div>
+
+</body>
+</html>

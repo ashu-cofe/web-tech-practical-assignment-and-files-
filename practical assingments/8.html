@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discount Calculator</title>
+</head>
+<body>
+  <input type="number" id="amount" placeholder="Enter purchase amount">
+  <button onclick="calculateDiscount()">Calculate Discount</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateDiscount() {
+      let amt = Number(document.getElementById('amount').value);
+      let discount = amt >= 100 ? 20 : amt >= 50 ? 10 : 0;
+      document.getElementById('result').innerText = "Discount: $" + discount;
+    }
+  </script>
+</body>
+</html>
