@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Kumar Singh | AI Enthusiast & CSE Student</title>
+    <style>
+        body{
+            margin:0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+            color:#fff;
+        }
+        header{
+            padding:60px 20px;
+            text-align:center;
+        }
+        header h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+        header p{
+            font-size:18px;
+            opacity:0.9;
+        }
+        nav{
+            background:rgba(0,0,0,0.4);
+            padding:10px 0;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            margin:0;
+            padding:0;
+        }
+        nav ul li{
+            margin:0 20px;
+        }
+        nav ul li a{
+            color:#fff;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+        nav ul li a:hover{
+            color:#00e6ff;
+        }
+        section{
+            max-width:1100px;
+            margin:40px auto;
+            padding:20px;
+            background:rgba(255,255,255,0.05);
+            border-radius:12px;
+        }
+        section h2{
+            border-left:5px solid #00e6ff;
+            padding-left:15px;
+            margin-bottom:20px;
+        }
+        .about p{
+            line-height:1.7;
+            font-size:16px;
+        }
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+        .skill-box{
+            background:rgba(0,0,0,0.4);
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            transition:0.3s;
+        }
+        .skill-box:hover{
+            transform:translateY(-5px);
+            background:rgba(0,0,0,0.6);
+        }
+        .education-item, .project-item{
+            margin-bottom:20px;
+        }
+        .education-item h3, .project-item h3{
+            margin:0;
+            color:#00e6ff;
+        }
+        .project-item p{
+            line-height:1.6;
+        }
+        footer{
+            text-align:center;
+            padding:30px 10px;
+            background:rgba(0,0,0,0.5);
+            margin-top:40px;
+        }
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#00e6ff;
+            color:#000;
+            border-radius:25px;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+        .btn:hover{
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ashish Kumar Singh</h1>
+    <p>First Year CSE (IBM) Student | AI Enthusiast | Future Advanced AI Creator</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am <strong>Ashish Kumar Singh</strong>, a first year Computer Science Engineering student (IBM specialization) at <strong>Rungta</strong>. 
+        I have a strong passion for technology and artificial intelligence. With a solid foundation in HTML, CSS, JavaScript, C language, Excel, and Advanced AI concepts, 
+        my goal is to grow into a highly skilled <strong>Advanced AI Creator</strong> and make a meaningful impact in the AI field.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">C Programming</div>
+        <div class="skill-box">Microsoft Excel</div>
+        <div class="skill-box">Advanced AI Concepts</div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>B.Tech – Computer Science Engineering (IBM)</h3>
+        <p>Rungta College of Engineering & Technology</p>
+        <p>Year: 1st Year (Currently Studying)</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects & Experience</h2>
+    <div class="project-item">
+        <h3>Personal Portfolio Website</h3>
+        <p>Designed and developed a professional personal portfolio using HTML, CSS, and JavaScript to showcase skills and career goals.</p>
+    </div>
+    <div class="project-item">
+        <h3>AI-Based Learning & Practice</h3>
+        <p>Hands-on practice with advanced AI tools and concepts, focusing on future-ready AI development and innovation.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you would like to connect with me for opportunities, collaborations, or learning discussions, feel free to reach out.</p>
+    <p><strong>Email:</strong> mrcarry1223@gmail.com</p>
+    <p><strong>Phone:</strong> +91 9343993617</p>
+    <a href="mailto:mrcarry1223@gmail.com" class="btn">Email Me</a>
+</section>
+
+<footer>
+    <p>© 2026 Ashish Kumar Singh | Aspiring AI Leader</p>
+</footer>
+
+<script>
+    // Simple smooth scroll effect
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
